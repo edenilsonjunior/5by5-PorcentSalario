@@ -18,7 +18,7 @@ do
     Console.Write("Digite o salario novo: ");   
     salarioNovo = double.Parse(Console.ReadLine());
 
-    if (salarioNovo <= 0) Console.WriteLine("Salario novo menor que o antigo!");
+    if (salarioNovo < salarioAntigo) Console.WriteLine("Salario novo menor que o antigo!");
 
 } while (salarioNovo < salarioAntigo);
 
