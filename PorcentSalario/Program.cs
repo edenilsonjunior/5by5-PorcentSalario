@@ -31,8 +31,10 @@ do
 
 } while (salarioNovo < salarioAntigo);
 
-resultado = (salarioNovo * 100) / salarioAntigo;
-resultado -= 100;
+//resultado = (salarioNovo * 100) / salarioAntigo;
+//resultado -= 100;
+
+resultado = (salarioNovo - salarioAntigo) * 100 / salarioAntigo;
 
 Console.WriteLine("=============================");
 Console.WriteLine($"O aumento foi de {resultado}%");
